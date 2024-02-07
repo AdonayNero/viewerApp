@@ -1,0 +1,15 @@
+<div>
+  <input type="file" (change)="onInputChange($event)">
+</div>
+<button (click)="descargarFile()">Descagar file</button>
+<p>Base64 : </p>
+<p style="word-wrap: break-word;">{{Base64 | json }}</p>
+
+ <ngx-doc-viewer
+    [url]="fileurlk"
+    viewer="url"
+    style="width:100%;height:50vh;"
+  ></ngx-doc-viewer>
+
+
+
